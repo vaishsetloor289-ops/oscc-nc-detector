@@ -55,17 +55,17 @@ def find_last_conv_layer(model):
     return None
 
 st.markdown(
-    "<p style='text-align: center; font-size: 14px; color: gray;'>"
+    "<p style='text-align: center; font-size: 30px; color: gray;'>"
     "Government Dental College and Research Institute, Bengaluru<br>"
     "Department of Oral Pathology &amp; Microbiology</p>",
     unsafe_allow_html=True
 )
 
-st.title("🔬 AI-Based N:C Ratio Detection in OSCC")
+st.title("AI-Based N:C Ratio Detection in Oral Squmaous Cell Carcinoma")
 st.markdown("Upload a 40x H&E-stained oral histopathology image to assess nuclear-cytoplasmic ratio.")
-st.info("ℹ️ This is a pilot research tool developed for academic and proof-of-concept purposes. It is not intended for clinical diagnosis.")
+st.info("This is a pilot research tool developed for academic and proof-of-concept purposes. It is not intended for clinical diagnosis.")
 
-with st.expander("📖 What is N:C Ratio, and why does it matter?"):
+with st.expander("CLICK HERE : What is N:C Ratio, and why does it matter?"):
     st.markdown("""
 The **Nuclear-Cytoplasmic (N:C) ratio** is the proportion of a cell's nucleus size relative to its cytoplasm size.
 
