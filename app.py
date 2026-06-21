@@ -61,7 +61,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.title("AI-Based N:C Ratio Detection in Oral Squmaous Cell Carcinoma")
+st.title("AI-Based N:C Ratio Detection in Oral Squamous Cell Carcinoma")
 st.markdown("Upload a 40x H&E-stained oral histopathology image to assess nuclear-cytoplasmic ratio.")
 st.info("This is a pilot research tool developed for academic and proof-of-concept purposes. It is not intended for clinical diagnosis.")
 
