@@ -54,9 +54,32 @@ def find_last_conv_layer(model):
             return layer.name
     return None
 
+st.markdown(
+    "<p style='text-align: center; font-size: 14px; color: gray;'>"
+    "Government Dental College and Research Institute, Bengaluru<br>"
+    "Department of Oral Pathology &amp; Microbiology</p>",
+    unsafe_allow_html=True
+)
+
 st.title("🔬 AI-Based N:C Ratio Detection in OSCC")
 st.markdown("Upload a 40x H&E-stained oral histopathology image to assess nuclear-cytoplasmic ratio.")
-st.warning("⚠️ Pilot/Research Tool — Not for clinical diagnostic use. Trained on a limited dataset for proof-of-concept purposes only.")
+st.info("ℹ️ This is a pilot research tool developed for academic and proof-of-concept purposes. It is not intended for clinical diagnosis.")
+
+with st.expander("📖 What is N:C Ratio, and why does it matter?"):
+    st.markdown("""
+The **Nuclear-Cytoplasmic (N:C) ratio** is the proportion of a cell's nucleus size relative to its cytoplasm size.
+
+In **normal, healthy oral epithelial cells**, the nucleus is small and the cytoplasm is abundant — giving a **low N:C ratio**.
+
+In **Oral Squamous Cell Carcinoma (OSCC)**, malignant cells often show:
+- Enlarged, irregular nuclei
+- Reduced cytoplasm
+- Hyperchromatism (darker-staining nuclei)
+
+This results in a **visibly increased N:C ratio**, which is one of the key cytological features pathologists assess when identifying dysplastic or malignant changes under the microscope.
+
+**Why it matters:** N:C ratio assessment is traditionally subjective and can vary between observers. An AI-assisted tool aims to provide a more objective, reproducible first-pass assessment — supporting, not replacing, expert pathologist evaluation.
+    """)
 
 uploaded_file = st.file_uploader("Upload histopathology image", type=["jpg", "jpeg", "png"])
 
@@ -105,3 +128,5 @@ if uploaded_file is not None:
 
     st.markdown("---")
     st.caption("Developed as part of a pilot study: 'Evaluating an AI for Automated Nuclear-Cytoplasmic Ratio Detection in OSCC' — Government Dental College and Research Institute, Bengaluru.")
+    st.caption("Authors: Swasti Haswani, Dr. Vaishnavi Setloor")
+    st.caption("Under the guidance of Dr. Sahana Srinath")
