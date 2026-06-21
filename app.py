@@ -127,6 +127,6 @@ if uploaded_file is not None:
         st.image(overlay, caption="Overlay", use_container_width=True)
 
     st.markdown("---")
-    st.caption("Developed as part of a pilot study: 'Evaluating an AI for Automated Nuclear-Cytoplasmic Ratio Detection in OSCC' — Government Dental College and Research Institute, Bengaluru.")
+    st.caption("Under the guidance of Dr.Sahana Srinath")
     st.caption("Authors: Swasti Haswani, Dr. Vaishnavi Setloor")
-    st.caption("Under the guidance of Dr. Sahana Srinath")
+   
