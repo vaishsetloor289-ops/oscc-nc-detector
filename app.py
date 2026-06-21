@@ -55,7 +55,7 @@ def find_last_conv_layer(model):
     return None
 
 st.markdown(
-    "<p style='text-align: center; font-size: 30px; color: gray;'>"
+    "<p style='text-align: center; font-size: 20px; color: gray;'>"
     "Government Dental College and Research Institute, Bengaluru<br>"
     "Department of Oral Pathology &amp; Microbiology</p>",
     unsafe_allow_html=True
