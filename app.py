@@ -128,5 +128,5 @@ if uploaded_file is not None:
 
     st.markdown("---")
     st.caption("Under the guidance of Dr.Sahana Srinath")
-    st.caption("Authors: Swasti Haswani, Dr. Vaishnavi Setloor")
+    st.caption("Authors: Swasti Haswani")
    
