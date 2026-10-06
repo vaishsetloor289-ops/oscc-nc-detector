@@ -115,6 +115,7 @@ if uploaded_file is not None:
     heatmap = make_gradcam_heatmap(img_array_exp, model, last_conv_layer)
     heatmap_resized = cv2.resize(heatmap, (224, 224))
     heatmap_colored = cv2.applyColorMap(np.uint8(255 * heatmap_resized), cv2.COLORMAP_JET)
+    heatmap = cv2.cvtColor(heatmap, cv2.COLOR_BGR2RGB)
     heatmap_colored = cv2.cvtColor(heatmap_colored, cv2.COLOR_BGR2RGB)
 
     original_img = (img_array * 255).astype(np.uint8)
