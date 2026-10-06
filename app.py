@@ -127,6 +127,5 @@ if uploaded_file is not None:
         st.image(overlay, caption="Overlay", use_container_width=True)
 
     st.markdown("---")
-    st.caption("Under the guidance of Dr.Sahana Srinath")
-    st.caption("Authors: Dr. Vaishnavi Setloor, Swasti Haswani")
+    st.caption("Authors: Dr. Vaishnavi Setloor")
    
